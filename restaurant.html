@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="CSS/restaurant.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--header-->
+    <header id="header">
+        <nav class="nav">
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+                <li><a href="#special">Special</a></li>
+                <li><a href="#dishes">Dishes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+        <i class="bi bi-cup-hot-fill" onclick="navChange()"></i>
+        <a href="#" class="logo"><img src="logo.png"></a>
+    </header>
+    <!--home section-->
+    <section id="home" class="container-fluid">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-md-8 ml-md-5 text-md-left text-center content">
+                <h1>Taste You Can't Get Anywhere</h1>
+                <h2> A Place you'll visit again </h2>
+                <p>Dishes ranging from sweetest shakes to spiciest noodles...<br>All at one place </p>
+                <a href="#special"><button id="getStarted">Get Started</button></a>
+            </div>
+            <div class="video-container">
+                <video src="burger.mp4" autoplay loop class="vid video1"></video>
+                <video src="fries.mp4" autoplay loop class="vid video2"></video>
+                <video src="pizza.mp4" autoplay loop class="vid video3"></video>
+            </div>
+            <div class="controls">
+                <div class="dots dot1"></div>
+                <div class="dots dot2"></div>
+                <div class="dots dot3"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Special section starts-->
+    <section id="special" class="container-fluid">
+        <div class="heading text-center">
+            <h1>Our <span>Special</span></h1>
+            <p>Speciality of our place for which people visit again</p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="image/pastry.jpg" alt="">
+                <p>Sweetest yet subtle enough to melt in your mouth...People say this is cakiest cake they ever had</p>
+                <a href="#"><button>Read more</button></a>
+            </div>
+            <div class="card">
+                <img src="image/mealset.jpg" alt="">
+                <p>Every family's first preference...Whether kids or your any loved one there is no better choice than this </p>
+                <a href="#"><button>Read more</button></a>
+            </div>
+            <div class="card">
+                <img src="image/vegRoll.jpg" alt="">
+                <p>Parents prefer these rolles than their kids rolling over the floor for something as tasty as this</p>
+                <a href="#"><button>Read more</button></a>
+            </div>
+        </div>
+
+    </section>
+    <!--about Section starts-->
+    <section id="about" class="container">
+        <div class="heading text-center">
+            <h1><span>About</span>Us</h1>
+        </div>
+        <div class="row min-vh-100">
+            <div class="col-md-6 text-md-left align-self-center content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iusto iure commodi reiciendis quae facilis ipsam aliquam quis hic laboriosam beatae, excepturi atque deleniti velit. Cumque amet dolore eaque suscipit.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere sapiente nulla expedita ipsam sunt?</p>
+                <a href="#"><button>Learn more</button></a>
+            </div>
+            <div class="col-md-6 image">
+                <img src="image/chef.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!--dishes section start-->
+
+    <section id="dishes" class="container">
+        <div class="heading text-center">
+            <h1>Our<span>Dishes</span></h1>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/pinkShake.jpg" alt="">
+                <div class="info">
+                    <h1>Pink Shake</h1>
+                    <p>Rating-3/5<br>Price-80Rs.</p>
+                    <a href="#"><button>View</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/vegRoll.jpg" alt="">
+                <div class="info">
+                    <h1>Veg Roll</h1>
+                    <p>Rating-4.5/5<br>Price-120Rs.</p>
+                    <a href="#"><button>View</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/chocoShake.jpg" alt="">
+                <div class="info">
+                    <h1>chocoShake</h1>
+                    <p>Rating-3/5<br>Price-70Rs.</p>
+                    <a href="#"><button>View</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/hotDog.jpg" alt="">
+                <div class="info">
+                    <h1>HotDog</h1>
+                    <p>Rating-4/5<br>Price-150Rs.</p>
+                    <a href="#"><button>View</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/noodles.jpg" alt="">
+                <div class="info">
+                    <h1>Noodles</h1>
+                    <p>Rating-3/5<br>Price-125Rs.</p>
+                    <a href="#"><button>View</button></a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="image/soup.jpg" alt="">
+                <div class="info">
+                    <h1>Soup</h1>
+                    <p>Rating-3.5/5<br>Price-100Rs.</p>
+                    <a href="#"><button>View</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact section start-->
+    <section id="contact" class="container-fluid">
+        <div class="heading text-center">
+            <h1><span>Contact </span>Us</h1>
+        </div>
+        <div class="row justify-content-center">
+            <form action="" class="col-md-7">
+                <div class="inputBox">
+                    <input type="text" required>
+                    <h3>Full Name</h3>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required>
+                    <h3>E-mail</h3>
+                </div>
+                <div class="inputBox">
+                    <textarea required name="" id="" cols="30" rows="10"></textarea>
+                    <h3>Message</h3>
+                </div>
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </section>
+    <!--footer section-->
+    <section id="footer" class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-4 brand">
+                <a href="#" class="logo"><img src="logo.png"></a>
+                <div class="icons">
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-twitter"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                    <a href="#" class="bi bi-pinterest"></a>
+                </div>
+            </div>
+            <div class="col-md-4 footer-links">
+                <h3>Links:</h3>
+                <a href="#home">Home</a>
+                <a href="#special">Special</a>
+                <a href="#about">About</a>
+                <a href="#dishes">Dishes</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="col-md-4 text-center text-md-left letter">
+                <h2>Newsletter</h2>
+                <input type="text"><br>
+                <input type="submit" value="Subscribe">
+            </div>
+        </div>
+        <h1>&copy; copyright @ 2023 by <span>Alisha Kausheen</span></h1>
+    </section>
+    <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="JS/restaurant.js">
+    </script>
+
+</body>
+
+</html>
